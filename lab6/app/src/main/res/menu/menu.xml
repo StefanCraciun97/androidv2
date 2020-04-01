@@ -8,4 +8,6 @@
         android:title="Suggestions" />
     <item android:id="@+id/settings"
         android:title="Settings" />
+    <item android:id="@+id/sensors_location"
+        android:title="Sensors and Location" />
 </menu>

@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences shared = PreferenceManager.getDefaultSharedPreferences(this);
         // salvam setarile
         Boolean x = shared.getBoolean("card_info",false);
-        ((TextView)findViewById(R.id.descriere)).setText("save card info: " + x.toString()+ "\nemail: " + shared.getString("email_address", "not_set"));
+        ((TextView)findViewById(R.id.descriere)).setText("save card info: " + x.toString() + "\nemail: " + shared.getString("email_address", "not_set"));
 
 
         String filename = "salvare";
@@ -261,6 +261,13 @@ public class MainActivity extends AppCompatActivity {
         else if (menuItem.getItemId() == R.id.settings) {
 
             Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
+            startActivity(intent);
+
+        }
+
+        else if (menuItem.getItemId() == R.id.sensors_location) {
+
+            Intent intent = new Intent(getApplicationContext(), sensors_location.class);
             startActivity(intent);
 
         }
